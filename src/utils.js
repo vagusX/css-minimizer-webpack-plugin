@@ -427,7 +427,7 @@ async function lightningCssMinify(input, sourceMap, minimizerOptions) {
     lightningCssOptions.sourceMap = true;
   }
 
-  const result = await lightningCss.transform(lightningCssOptions);
+  const result = lightningCss.transform(lightningCssOptions);
 
   return {
     code: result.code.toString(),
